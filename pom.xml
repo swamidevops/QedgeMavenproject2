@@ -6,8 +6,21 @@
   <groupId>ram05</groupId>
   <artifactId>ram1205</artifactId>
   <version>1.5</version>
-  <gcloud.plugin.version>117</gcloud.plugin.version>
-
+  <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                    <executable>${JAVA_6_HOME}\bin\javac.exe</executable>
+                    <compilerArguments>
+                        <bootclasspath>${JAVA_6_HOME}\jre\lib\rt.jar</bootclasspath>
+                    </compilerArguments>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
   <name>ram1205</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
