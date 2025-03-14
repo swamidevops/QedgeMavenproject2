@@ -6,8 +6,7 @@
   <groupId>ram05</groupId>
   <artifactId>ram1205</artifactId>
   <version>1.5</version>
-  <gcloud.plugin.version>2.0.9.133.v201611104</gcloud.plugin.version>
-
+  <gcloud.plugin.version>117</gcloud.plugin.version>
 
   <name>ram1205</name>
   <!-- FIXME change it to the project's website -->
