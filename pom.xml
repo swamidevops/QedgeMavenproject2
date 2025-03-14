@@ -5,23 +5,16 @@
 
   <groupId>ram05</groupId>
   <artifactId>ram1205</artifactId>
-  <version>1.5</version>
-      <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <showDeprecation>true</showDeprecation>
-                    <showWarnings>true</showWarnings>
-                    <executable>${jdk.home}/bin/javac</executable>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>  
+  <version>1.5</version
+
+  <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<version>2.19.1</version>
+	<configuration>
+		<trimStackTrace>false</trimStackTrace>
+	</configuration>
+</plugin> 
   <name>ram1205</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
